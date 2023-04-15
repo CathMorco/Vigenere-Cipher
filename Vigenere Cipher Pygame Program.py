@@ -61,9 +61,15 @@ keyword = input("Please insert your keyword: ").lower().replace(" ", "")
 while len(keyword) < len(message):
     keyword += keyword
     keyword = keyword[:len(message)]
-    
-# Encrypt the message
 
+# Encrypt the message
+cipher_text = []
+for i in range(len(message)):
+    messageConstant = ord(message[i]) - 97
+    keywordConstant = ord(keyword[i]) - 97
+    cipherConstant = (messageConstant + keywordConstant) % 26
+    cipher_text.append(chr(cipherConstant + 65))
+    
 # Format the ciphertext into three lines
 
 #Informs the user of the output
