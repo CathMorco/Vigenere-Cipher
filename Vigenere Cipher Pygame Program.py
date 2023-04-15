@@ -79,5 +79,6 @@ line3 = " ".join(cipher_text[2*words_per_line:])
 texts= [line1,line2,line3]
 
 #Informs the user of the output
+print("\n Now look back again at the 'Vigenère Cipher' display screen :D")
 
 #Runs the program
