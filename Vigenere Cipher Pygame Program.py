@@ -54,6 +54,8 @@ def array_func(col,dir,text,size,x,y):
 pygame.init()
 
 # Ask for user input
+message = input("Please insert your plaintext: ").lower().replace(" ", "")
+keyword = input("Please insert your keyword: ").lower().replace(" ", "")
 
 # Make sure the keyword is long enough
 
