@@ -49,8 +49,9 @@ def array_func(col,dir,text,size,x,y):
     for i in range(len(col)):
         draw_text(text[i],size,col[i],x,y + i*50)
         col_change(col[i],dir[i])
-        
+
 # Initializing pygame
+pygame.init()
 
 # Ask for user input
 
