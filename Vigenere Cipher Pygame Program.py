@@ -14,6 +14,8 @@ pygame.display.set_caption("Vigenère Cipher")
 clock = pygame.time.Clock()
 
 #RGB example values
+black = (0,0,0)
+white = (255,255,255)
 
 #The rate of change in colors
 
