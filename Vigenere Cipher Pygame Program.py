@@ -58,7 +58,10 @@ message = input("Please insert your plaintext: ").lower().replace(" ", "")
 keyword = input("Please insert your keyword: ").lower().replace(" ", "")
 
 # Make sure the keyword is long enough
-
+while len(keyword) < len(message):
+    keyword += keyword
+    keyword = keyword[:len(message)]
+    
 # Encrypt the message
 
 # Format the ciphertext into three lines
