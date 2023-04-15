@@ -43,9 +43,13 @@ def col_change(col,dir):
         col[i] += col_spd * dir[i]
         if col[i] >=maximum or col[i] <=minimum:
             dir[i] *= -1
-            
-#Combines the color change and draw text into one function
 
+#Combines the color change and draw text into one function
+def array_func(col,dir,text,size,x,y):
+    for i in range(len(col)):
+        draw_text(text[i],size,col[i],x,y + i*50)
+        col_change(col[i],dir[i])
+        
 # Initializing pygame
 
 # Ask for user input
