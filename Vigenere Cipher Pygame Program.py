@@ -8,6 +8,10 @@ import pygame
 W, H = 800, 600
 
 #Creates the display screen
+display = pygame.Surface ((W, H))
+screen = pygame.display.set_mode ((W, H))
+pygame.display.set_caption("Vigenère Cipher")
+clock = pygame.time.Clock()
 
 #RGB example values
 
