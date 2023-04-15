@@ -82,3 +82,17 @@ texts= [line1,line2,line3]
 print("\n Now look back again at the 'Vigenère Cipher' display screen :D")
 
 #Runs the program
+run=True
+
+while run:
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            run = False
+
+    array_func(def_col,col_dir,texts,40, W / 2 , 200)
+
+    clock.tick()
+
+    display.blit(screen,(0,0))
+    pygame.display.update()
