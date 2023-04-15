@@ -69,8 +69,14 @@ for i in range(len(message)):
     keywordConstant = ord(keyword[i]) - 97
     cipherConstant = (messageConstant + keywordConstant) % 26
     cipher_text.append(chr(cipherConstant + 65))
-    
+
 # Format the ciphertext into three lines
+num_words = len(cipher_text)
+words_per_line = num_words // 3
+line1 = " ".join(cipher_text[:words_per_line])
+line2 = " ".join(cipher_text[words_per_line:2*words_per_line])
+line3 = " ".join(cipher_text[2*words_per_line:])
+texts= [line1,line2,line3]
 
 #Informs the user of the output
 
